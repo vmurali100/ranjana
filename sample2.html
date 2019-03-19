@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tvDetails">
+        <p id="name">TV Name :</p>
+        <p id="size">TV Size :</p>
+        <p id="rate">TV Rate :</p>
+        <p id="model">TV Model :</p>
+        <p id="panel">TV Panl :</p>
+
+    </div>
+    <script>
+    // Objects
+// var some = "Murali Krishna"
+    var tv = {
+        name : "Samasung",
+        size:"32 Inch" ,
+        rate :10000,
+        panel:"Black",
+        model:"XYZ"
+    }
+    // document.getElementById("name").innerHTML = "TV Name :"+ tv.name
+    // document.getElementById("size").innerHTML = "TV Size :"+ tv.size
+    // document.getElementById("rate").innerHTML = "TV Rate :"+ tv.rate
+    // document.getElementById("panel").innerHTML = "TV Panel :"+ tv.panel
+    // document.getElementById("model").innerHTML = "TV Model :"+ tv.model
+
+    for (xyz in tv){
+        document.getElementById(xyz).innerHTML = "TV "+xyz+ " : "+ tv[xyz]
+    }
+    console.log(tv)
+    </script>
+</body>
+</html>

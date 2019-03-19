@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="myName">
+    <p id="myPara">My Nmae here</p>
+    <h1 id="myHeading">My Heading Here</h1>
+    <div id="myDiv">my Div Here</div>
+    <input type="text">
+    <select name="" id="">
+        <option value="one">1</option>
+        <option value="two">2</option> 
+        <option value="three">3</option>
+    </select>
+    <script>
+         var heading = document.getElementById("myHeading").innerHTML;
+        var para = document.getElementById("myPara").innerHTML;
+        var div = document .getElementById("myDiv").innerHTML;
+
+        var myDetails ={
+            myHeading:heading,
+            myPara : para,
+            myDiv:div
+        }
+       console.log(myDetails)
+      
+        // document.getElementById("myName").value ="Murali krishna";
+        // document.getElementById("myPara").innerHTML ="rrrr";
+        // document.getElementById("myHeading").innerHTML ="aaaa";
+    </script>
+</body>
+</html>

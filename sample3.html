@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person = {
+            fname : "Murali"
+        };
+        person.lname= "Krishna";
+
+        person['email'] = "murali@gmail.com"
+
+        console.log(person)
+
+        var person1={
+
+            f1:"rina"
+        }
+        person1.l2="sharma";
+        person1['email']="asd@ghj";
+
+        for(abc in person1){
+            document.write(person1[abc]+"<br>")
+        }
+        console.log(person1);
+    </script>
+</body>
+</html>
